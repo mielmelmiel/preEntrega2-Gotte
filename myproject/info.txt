@@ -1,0 +1,14 @@
+//FETCH 
+
+fetch("http://miserver.com")
+.then(()=>{
+    return caches.open()
+})
+.then(()=>{
+    
+})
+.catch(()=>{
+    console.log("error")
+    location.reload()
+})
+.finally(()=>{})
